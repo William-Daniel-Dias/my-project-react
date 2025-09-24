@@ -6,9 +6,9 @@ const App = () => {
       </h1>
 
       <div className="container mx-auto p-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <div className="rounder-2x1 border p-4 bg-white shadow-sm">Card A</div>
-        <div className="rounder-2x1 border p-4 bg-white shadow-sm">Card A</div>
-        <div className="rounder-2x1 border p-4 bg-white shadow-sm">Card A</div>
+        <div className="rounder-2xl border p-4 bg-white shadow-sm">Card A</div>
+        <div className="rounder-2xl border p-4 bg-white shadow-sm">Card A</div>
+        <div className="rounder-2xl border p-4 bg-white shadow-sm">Card A</div>
       </div>
     </main>
   );
