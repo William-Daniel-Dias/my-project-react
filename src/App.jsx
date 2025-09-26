@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Card } from "./components/Card";
 import { Hello } from "./components/Hello";
+import { TextField } from "./components/TextField";
 
 const App = () => {
   const [count, setCount] = useState(0)
+  const [name, setName] = useState("")
 
   const CARDS = [
     {
@@ -23,7 +25,7 @@ const App = () => {
     }
   ]
 
-    const inc = () => setCount(c => c + 1)
+  const inc = () => setCount(c => c + 1)
 
 
   return (
@@ -50,6 +52,14 @@ const App = () => {
         Count:{count}
       </button>
 
+      <form>
+        <TextField
+          id='name'
+          label="Nome Completo"
+          value={name}
+          onChange={event => setName(event.target.value)}
+        />
+      </form>
     </main>
   );
 }
