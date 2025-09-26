@@ -10,6 +10,10 @@ const App = () => {
         <div className="rounder-2xl border p-4 bg-white shadow-sm">Card A</div>
         <div className="rounder-2xl border p-4 bg-white shadow-sm">Card A</div>
       </div>
+
+      <a href="#" className="inline-block px-4 py-2 rounded-lg border hover:bg-slate-300 focus:ring-2 focus:ring-blue-500 transition-all">
+        Link com foco
+      </a>
     </main>
   );
 }
