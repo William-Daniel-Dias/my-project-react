@@ -27,6 +27,12 @@ const App = () => {
 
   const inc = () => setCount(c => c + 1)
 
+  const handleSubmit = event => {
+    event.preventDefault()
+
+    console.log({ name })
+  }
+
 
   return (
     <main className="min-h-dvh grid place-items-center bg-slate-50">
@@ -52,13 +58,21 @@ const App = () => {
         Count:{count}
       </button>
 
-      <form>
+      <form onSubmit={handleSubmit}>
         <TextField
-          id='name'
+          id="name"
+          name="fullName"
           label="Nome Completo"
+          type="text"
           value={name}
           onChange={event => setName(event.target.value)}
         />
+
+      <button 
+        type="submit" 
+        className="bg-fuchsia-700 text-neutral-50 px-4 py-2 rounded-2xl cursor-pointer text-center w-full">
+        Enviar
+      </button>
       </form>
     </main>
   );
